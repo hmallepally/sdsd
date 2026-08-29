@@ -95,31 +95,9 @@ pytest examples/python/ch10_testing_methodology/test_z3_invariants.py -v
 
 ## 🛡️ The SDSD Fortress: Four Layers of Defense-in-Depth
 
-```
-+-----------------------------------------------------------------------------------+
-| 1. Threat Blueprint & Blast Radius Filter (Scopes directory access & imports)     |
-+-----------------------------------------------------------------------------------+
-  |
-  v
-+-----------------------------------------------------------------------------------+
-| 2. Strict Input Whitelisting & Pydantic Schema Validation                         |
-+-----------------------------------------------------------------------------------+
-  |
-  v
-+-----------------------------------------------------------------------------------+
-| 3. Finite State Machine Transition Guards (Guarded lifecycle state transitions)   |
-+-----------------------------------------------------------------------------------+
-  |
-  v
-+-----------------------------------------------------------------------------------+
-| 4. Mathematical Invariant Enforcement (Conservation of Mass, Zero-Trust Audit)    |
-+-----------------------------------------------------------------------------------+
-  |
-  v
-+===================================================================================+
-|                        CORE PROTECTED FINANCIAL LEDGER                            |
-+===================================================================================+
-```
+<p align="center">
+  <img src="docs/images/sdsd_fortress_layers.svg" alt="The SDSD Fortress: Four Layers of Defense-in-Depth" width="100%">
+</p>
 
 ---
 

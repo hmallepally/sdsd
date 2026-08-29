@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 760" width="100%" height="100%">
+  <defs>
+    <!-- Shadow Filter -->
+    <filter id="card-shadow" x="-3%" y="-4%" width="106%" height="112%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.06"/>
+    </filter>
+    <filter id="vault-shadow" x="-3%" y="-4%" width="106%" height="114%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#064E3B" flood-opacity="0.12"/>
+    </filter>
+    
+    <!-- Linear Gradients -->
+    <linearGradient id="layer1-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F0F9FF"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="layer2-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EEF2FF"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="layer3-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FAF5FF"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="layer4-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ECFDF5"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="vault-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    
+    <!-- Marker Arrow -->
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="4" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#0891B2" />
+    </marker>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="960" height="760" fill="#FFFFFF" rx="16"/>
+  <rect x="1" y="1" width="958" height="758" fill="none" stroke="#E2E8F0" stroke-width="1.5" rx="15"/>
+
+  <!-- Top Title Header -->
+  <g transform="translate(480, 42)">
+    <text text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="800" fill="#0C4A6E" letter-spacing="0.5">THE SDSD FORTRESS: FOUR LAYERS OF DEFENSE-IN-DEPTH</text>
+    <text text-anchor="middle" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#64748B">Multi-Tier Invariant &amp; Boundary Enforcement for Autonomous AI Code Generation</text>
+  </g>
+
+  <!-- LAYER 1 -->
+  <g transform="translate(60, 95)" filter="url(#card-shadow)">
+    <rect width="840" height="92" rx="10" fill="url(#layer1-grad)" stroke="#0284C7" stroke-width="1.5"/>
+    <rect x="0" y="0" width="8" height="92" fill="#0284C7" rx="4"/>
+    
+    <!-- Badge -->
+    <rect x="24" y="18" width="34" height="26" rx="6" fill="#0284C7"/>
+    <text x="41" y="36" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="800" fill="#FFFFFF">01</text>
+    
+    <!-- Title -->
+    <text x="70" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#0369A1">Layer 1: Threat Blueprint &amp; Blast Radius Filter</text>
+    
+    <!-- Description -->
+    <text x="70" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="400" fill="#334155">Strictly restricts repository write access, scopes directory permissions, and enforces import firewalls.</text>
+    
+    <!-- Tags -->
+    <g transform="translate(70, 68)">
+      <rect x="0" y="0" width="110" height="18" rx="4" fill="#E0F2FE"/>
+      <text x="55" y="13" text-anchor="middle" font-family="monospace" font-size="10.5" font-weight="600" fill="#0284C7">Directory Scope</text>
+      
+      <rect x="120" y="0" width="105" height="18" rx="4" fill="#E0F2FE"/>
+      <text x="172" y="13" text-anchor="middle" font-family="monospace" font-size="10.5" font-weight="600" fill="#0284C7">Import Firewall</text>
+
+      <rect x="235" y="0" width="135" height="18" rx="4" fill="#E0F2FE"/>
+      <text x="302" y="13" text-anchor="middle" font-family="monospace" font-size="10.5" font-weight="600" fill="#0284C7">Negative Constraints</text>
+    </g>
+  </g>
+
+  <!-- Arrow 1 to 2 -->
+  <g transform="translate(480, 187)">
+    <line x1="0" y1="0" x2="0" y2="28" stroke="#0891B2" stroke-width="2" stroke-dasharray="3,3" marker-end="url(#arrowhead)"/>
+    <rect x="-65" y="6" width="130" height="16" rx="4" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="0" y="18" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" font-weight="700" fill="#0891B2">VALIDATED REQUEST</text>
+  </g>
+
+  <!-- LAYER 2 -->
+  <g transform="translate(60, 222)" filter="url(#card-shadow)">
+    <rect width="840" height="92" rx="10" fill="url(#layer2-grad)" stroke="#6366F1" stroke-width="1.5"/>
+    <rect x="0" y="0" width="8" height="92" fill="#6366F1" rx="4"/>
+    
+    <!-- Badge -->
+    <rect x="24" y="18" width="34" height="26" rx="6" fill="#6366F1"/>
+    <text x="41" y="36" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="800" fill="#FFFFFF">02</text>
+    
+    <!-- Title -->
+    <text x="70" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#4338CA">Layer 2: Strict Input Whitelisting &amp; Pydantic Schema Validation</text>
+    
+    <!-- Description -->
+    <text x="70" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="400" fill="#334155">Formal JSON Schema validation models enforce exact payload structures, regex formats, and tenant scope.</text>
+    
+    <!-- Tags -->
+    <g transform="translate(70, 68)">
+      <rect x="0" y="0" width="130" height="18" rx="4" fill="#EEF2FF"/>
+      <text x="65" y="13" text-anchor="middle" font-family="monospace" font-size="10.5" font-weight="600" fill="#4F46E5">JSON Schema v7</text>
+      
+      <rect x="140" y="0" width="115" height="18" rx="4" fill="#EEF2FF"/>
+      <text x="197" y="13" text-anchor="middle" font-family="monospace" font-size="10.5" font-weight="600" fill="#4F46E5">Pydantic v2 Core</text>
+
+      <rect x="265" y="0" width="130" height="18" rx="4" fill="#EEF2FF"/>
+      <text x="330" y="13" text-anchor="middle" font-family="monospace" font-size="10.5" font-weight="600" fill="#4F46E5">Tenant Isolation</text>
+    </g>
+  </g>
+
+  <!-- Arrow 2 to 3 -->
+  <g transform="translate(480, 314)">
+    <line x1="0" y1="0" x2="0" y2="28" stroke="#0891B2" stroke-width="2" stroke-dasharray="3,3" marker-end="url(#arrowhead)"/>
+    <rect x="-65" y="6" width="130" height="16" rx="4" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="0" y="18" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" font-weight="700" fill="#0891B2">SANITIZED PAYLOAD</text>
+  </g>
+
+  <!-- LAYER 3 -->
+  <g transform="translate(60, 349)" filter="url(#card-shadow)">
+    <rect width="840" height="92" rx="10" fill="url(#layer3-grad)" stroke="#A855F7" stroke-width="1.5"/>
+    <rect x="0" y="0" width="8" height="92" fill="#A855F7" rx="4"/>
+    
+    <!-- Badge -->
+    <rect x="24" y="18" width="34" height="26" rx="6" fill="#A855F7"/>
+    <text x="41" y="36" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="800" fill="#FFFFFF">03</text>
+    
+    <!-- Title -->
+    <text x="70" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#7E22CE">Layer 3: Finite State Machine Transition Guards</text>
+    
+    <!-- Description -->
+    <text x="70" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="400" fill="#334155">Guarded state lifecycle transitions prevent unauthorized state jumps (e.g. DRAFT to SETTLED without approval).</text>
+    
+    <!-- Tags -->
+    <g transform="translate(70, 68)">
+      <rect x="0" y="0" width="135" height="18" rx="4" fill="#F3E8FF"/>
+      <text x="67" y="13" text-anchor="middle" font-family="monospace" font-size="10.5" font-weight="600" fill="#9333EA">Guarded Transitions</text>
+      
+      <rect x="145" y="0" width="125" height="18" rx="4" fill="#F3E8FF"/>
+      <text x="207" y="13" text-anchor="middle" font-family="monospace" font-size="10.5" font-weight="600" fill="#9333EA">Lifecycle Models</text>
+
+      <rect x="280" y="0" width="115" height="18" rx="4" fill="#F3E8FF"/>
+      <text x="337" y="13" text-anchor="middle" font-family="monospace" font-size="10.5" font-weight="600" fill="#9333EA">Atomic Locking</text>
+    </g>
+  </g>
+
+  <!-- Arrow 3 to 4 -->
+  <g transform="translate(480, 441)">
+    <line x1="0" y1="0" x2="0" y2="28" stroke="#0891B2" stroke-width="2" stroke-dasharray="3,3" marker-end="url(#arrowhead)"/>
+    <rect x="-70" y="6" width="140" height="16" rx="4" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="0" y="18" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" font-weight="700" fill="#0891B2">GUARDED TRANSITION</text>
+  </g>
+
+  <!-- LAYER 4 -->
+  <g transform="translate(60, 476)" filter="url(#card-shadow)">
+    <rect width="840" height="92" rx="10" fill="url(#layer4-grad)" stroke="#10B981" stroke-width="1.5"/>
+    <rect x="0" y="0" width="8" height="92" fill="#10B981" rx="4"/>
+    
+    <!-- Badge -->
+    <rect x="24" y="18" width="34" height="26" rx="6" fill="#10B981"/>
+    <text x="41" y="36" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="800" fill="#FFFFFF">04</text>
+    
+    <!-- Title -->
+    <text x="70" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#047857">Layer 4: Mathematical Invariant Enforcement</text>
+    
+    <!-- Description -->
+    <text x="70" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="400" fill="#334155">Enforces non-negotiable mathematical laws: Conservation of Mass, Non-Negativity, and PBT Fuzzing.</text>
+    
+    <!-- Tags -->
+    <g transform="translate(70, 68)">
+      <rect x="0" y="0" width="145" height="18" rx="4" fill="#D1FAE5"/>
+      <text x="72" y="13" text-anchor="middle" font-family="monospace" font-size="10.5" font-weight="600" fill="#059669">Conservation of Mass</text>
+      
+      <rect x="155" y="0" width="130" height="18" rx="4" fill="#D1FAE5"/>
+      <text x="220" y="13" text-anchor="middle" font-family="monospace" font-size="10.5" font-weight="600" fill="#059669">Hypothesis PBT Fuzz</text>
+
+      <rect x="295" y="0" width="135" height="18" rx="4" fill="#D1FAE5"/>
+      <text x="362" y="13" text-anchor="middle" font-family="monospace" font-size="10.5" font-weight="600" fill="#059669">Microsoft Z3 Proofs</text>
+    </g>
+  </g>
+
+  <!-- Arrow 4 to Core Vault -->
+  <g transform="translate(480, 568)">
+    <line x1="0" y1="0" x2="0" y2="30" stroke="#059669" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+    <rect x="-65" y="7" width="130" height="16" rx="4" fill="#FFFFFF" stroke="#10B981" stroke-width="1"/>
+    <text x="0" y="19" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" font-weight="800" fill="#047857">INVARIANT PROVEN</text>
+  </g>
+
+  <!-- CORE PROTECTED FINANCIAL LEDGER VAULT -->
+  <g transform="translate(60, 605)" filter="url(#vault-shadow)">
+    <rect width="840" height="110" rx="12" fill="url(#vault-grad)" stroke="#10B981" stroke-width="2"/>
+    <rect x="4" y="4" width="832" height="102" rx="8" fill="none" stroke="#10B981" stroke-width="1" stroke-dasharray="6,4" opacity="0.6"/>
+    
+    <!-- Center Vault Icon / Lock Badge -->
+    <circle cx="80" cy="55" r="28" fill="#047857" stroke="#10B981" stroke-width="2"/>
+    <!-- Lock graphic -->
+    <path d="M 72 50 L 72 44 C 72 39 76 35 80 35 C 84 35 88 39 88 44 L 88 50 Z" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+    <rect x="68" y="50" width="24" height="18" rx="3" fill="#FFFFFF"/>
+    <circle cx="80" cy="58" r="2.5" fill="#047857"/>
+
+    <!-- Vault Title -->
+    <text x="130" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="800" fill="#FFFFFF" letter-spacing="1">CORE PROTECTED FINANCIAL LEDGER</text>
+    <text x="130" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400" fill="#94A3B8">Zero-Trust Protected Domain: 100% Invariant-Preserved, Concurrency-Safe, and Multi-Tenant Isolated.</text>
+
+    <!-- Verified Indicators -->
+    <g transform="translate(130, 78)">
+      <rect x="0" y="0" width="130" height="18" rx="4" fill="#064E3B" stroke="#10B981" stroke-width="1"/>
+      <text x="65" y="13" text-anchor="middle" font-family="monospace" font-size="10.5" font-weight="700" fill="#34D399">&#x2714; Zero-Drift Verified</text>
+
+      <rect x="140" y="0" width="150" height="18" rx="4" fill="#064E3B" stroke="#10B981" stroke-width="1"/>
+      <text x="215" y="13" text-anchor="middle" font-family="monospace" font-size="10.5" font-weight="700" fill="#34D399">&#x2714; Tenant Isolated</text>
+
+      <rect x="300" y="0" width="145" height="18" rx="4" fill="#064E3B" stroke="#10B981" stroke-width="1"/>
+      <text x="372" y="13" text-anchor="middle" font-family="monospace" font-size="10.5" font-weight="700" fill="#34D399">&#x2714; Cryptographic Audit</text>
+    </g>
+  </g>
+
+</svg>
