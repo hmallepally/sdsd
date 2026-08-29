@@ -1,0 +1,208 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SDSD Specification Meta-Schema",
+  "description": "Standardized schema for Spec-Driven Secure Development feature and bugfix specifications.",
+  "type": "object",
+  "required": [
+    "spec_id",
+    "author",
+    "domain",
+    "pillar_1_goal",
+    "pillar_2_blast_radius",
+    "pillar_3_invariants",
+    "pillar_4_state_machine",
+    "pillar_5_negative_constraints"
+  ],
+  "properties": {
+    "spec_id": {
+      "type": "string",
+      "pattern": "^SDSD-[0-9]{4}-[A-Z0-9]+$"
+    },
+    "author": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "string",
+      "enum": [
+        "auth",
+        "ledger",
+        "transfers",
+        "settlement",
+        "analytics"
+      ]
+    },
+    "target_model": {
+      "type": "string",
+      "enum": [
+        "claude-4-sonnet",
+        "gpt-5",
+        "gemini-2.5-pro",
+        "agnostic"
+      ]
+    },
+    "pillar_1_goal": {
+      "type": "object",
+      "required": [
+        "description",
+        "business_context",
+        "acceptance_criteria"
+      ],
+      "properties": {
+        "description": {
+          "type": "string",
+          "minLength": 10
+        },
+        "business_context": {
+          "type": "string"
+        },
+        "acceptance_criteria": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        }
+      }
+    },
+    "pillar_2_blast_radius": {
+      "type": "object",
+      "required": [
+        "allowed_directories",
+        "allowed_dependencies",
+        "forbidden_modifications"
+      ],
+      "properties": {
+        "allowed_directories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "allowed_dependencies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "forbidden_modifications": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "pillar_3_invariants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "description",
+          "formal_rule",
+          "verification_method"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^INV-[0-9]{3}$"
+          },
+          "description": {
+            "type": "string"
+          },
+          "formal_rule": {
+            "type": "string"
+          },
+          "verification_method": {
+            "type": "string",
+            "enum": [
+              "property_based_testing",
+              "type_system",
+              "mutation_testing",
+              "contract_testing",
+              "smt_solver"
+            ]
+          }
+        }
+      },
+      "minItems": 1
+    },
+    "pillar_4_state_machine": {
+      "type": "object",
+      "required": [
+        "states",
+        "initial_state",
+        "terminal_states",
+        "transitions"
+      ],
+      "properties": {
+        "states": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 2
+        },
+        "initial_state": {
+          "type": "string"
+        },
+        "terminal_states": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "transitions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "from",
+              "to",
+              "trigger",
+              "guard_condition"
+            ],
+            "properties": {
+              "from": {
+                "type": "string"
+              },
+              "to": {
+                "type": "string"
+              },
+              "trigger": {
+                "type": "string"
+              },
+              "guard_condition": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "pillar_5_negative_constraints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "forbidden_pattern",
+          "rationale",
+          "positive_alternative"
+        ],
+        "properties": {
+          "forbidden_pattern": {
+            "type": "string"
+          },
+          "rationale": {
+            "type": "string"
+          },
+          "positive_alternative": {
+            "type": "string"
+          }
+        }
+      },
+      "minItems": 1
+    }
+  }
+}

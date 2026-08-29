@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AetherFi Transfer Payload Schema",
+  "type": "object",
+  "required": [
+    "transfer_id",
+    "source_account_id",
+    "destination_account_id",
+    "amount",
+    "currency",
+    "idempotency_key"
+  ],
+  "properties": {
+    "transfer_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "source_account_id": {
+      "type": "string",
+      "pattern": "^ACC-[0-9]{8}$"
+    },
+    "destination_account_id": {
+      "type": "string",
+      "pattern": "^ACC-[0-9]{8}$"
+    },
+    "amount": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "currency": {
+      "type": "string",
+      "enum": [
+        "USD",
+        "EUR",
+        "GBP",
+        "ETH",
+        "USDC"
+      ]
+    },
+    "idempotency_key": {
+      "type": "string",
+      "minLength": 16
+    }
+  },
+  "additionalProperties": false
+}

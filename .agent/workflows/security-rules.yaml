@@ -1,0 +1,11 @@
+# AetherFi Global Engineering Directives
+# Threat Model Rules and Architectural Constraints
+
+invariants:
+  - CONSERVATION_OF_MASS: "Total ledger balance must remain equal before and after transaction."
+  - NON_NEGATIVE: "Negative balances are strictly prohibited at the database constraint level."
+  - IMMUTABILITY: "A 'SETTLED' transaction record cannot be modified."
+
+blast_radius:
+  allowed_writes: ["table: ledger_entries", "table: account_balances"]
+  forbidden_modules: ["auth.admin_overrides", "services.external_api"]

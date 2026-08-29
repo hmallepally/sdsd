@@ -1,0 +1,24 @@
+# SDSD Repository-as-Context Rules (.cursorrules)
+# Version: 2.1.0
+# Domain: AetherFi Distributed Financial Core
+
+# ==============================================================================
+# ABSOLUTE ARCHITECTURAL INVARIANTS (NEVER VIOLATE)
+# ==============================================================================
+# 1. TENANT ISOLATION: All database queries and cache keys MUST be scoped by tenant_id.
+# 2. CONSERVATION OF MASS: sum(debits) MUST exactly equal sum(credits) in any ledger mutation.
+# 3. ZERO RAW SQL: All SQL statements must use parameterized ORM queries. Raw f-strings are forbidden.
+# 4. CRYPTO INTEGRITY: Never use MD5 or SHA-1 for security. Use bcrypt for passwords and SHA-256 for cache keys.
+
+# ==============================================================================
+# BLAST RADIUS BOUNDARIES
+# ==============================================================================
+# - You may only modify files in the active task subpackage.
+# - NEVER modify src/core/auth/, src/db/migrations/, or .github/ without explicit spec authorization.
+
+# ==============================================================================
+# POSITIVE CODING DIRECTIVES
+# ==============================================================================
+# - Database sessions: Use AsyncSession with 'select()' constructs.
+# - Input validation: Use strict Pydantic v2 schemas with extra="forbid".
+# - Currency arithmetic: Use decimal.Decimal with ROUND_HALF_EVEN.

@@ -1,0 +1,8 @@
+# .windsurfrules - SDSD Global Directives
+# Spec-Driven Secure Development Rules for Windsurf AI Cascade
+
+- Enforcement: Strict
+- Primary Invariant: Conservation of Mass (Sum(Debits) == Sum(Credits))
+- Isolation: All multi-tenant data access must enforce tenant_id partition
+- Database: Parameterized queries and ORM only
+- Crypto: Approved libraries only (src.security.crypto)

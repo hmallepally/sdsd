@@ -1,0 +1,23 @@
+# SDSD Autonomous Agent Containment (.windsurfrules)
+# Target: Cascade Autonomous Agent Environment
+
+[containment_field]
+strict_mode = true
+max_autonomous_file_edits = 4
+
+[blast_radius]
+allowed_paths = [
+    "src/api/transfers/",
+    "src/services/transfers/",
+    "tests/transfers/"
+]
+prohibited_paths = [
+    "src/core/security/",
+    "src/db/migrations/",
+    ".env*",
+    "deploy/"
+]
+
+[invariant_enforcement]
+pre_execution_checks = ["pytest tests/invariants/"]
+fail_on_mutation_drop = true
